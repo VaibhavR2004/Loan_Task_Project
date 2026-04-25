@@ -21,7 +21,7 @@ def is_high_risk(record):
 
 
 def process_loans():
-    data = load_json("E:/Vaibhav_Play/practice/loan_review_task/data/hdfc_loan_sample_20_rows.json")
+    data = load_json("/Users/ahammedanzar_mdnz/Desktop/Loan_project/Loan_Task_Project/data/hdfc_loan_sample_20_rows.json")
 
     if not data:
         print("No data found")
