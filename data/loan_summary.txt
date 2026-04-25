@@ -1,0 +1,4 @@
+Total Records: 20
+Approved: 13
+Rejected: 7
+High Risk: 7

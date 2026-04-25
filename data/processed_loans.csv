@@ -1,0 +1,21 @@
+Loan_ID,Customer_Name,Loan_Amount,CIBIL_Score,Loan_Status,High_Risk_Flag
+HDFC100001,Rohan Verma,8031545,699,Approved,False
+HDFC100002,Rohan Verma,899361,707,Rejected,False
+HDFC100003,Aditya Nair,2387748,641,Approved,False
+HDFC100004,Ananya Joshi,658856,677,Approved,False
+HDFC100005,Harpreet Singh,198671,594,Approved,True
+HDFC100006,Sonam Lama,494949,682,Approved,False
+HDFC100007,Krishna Mehta,1565649,693,Approved,False
+HDFC100008,Ishita Singh,5879217,723,Rejected,False
+HDFC100009,Rehan Siddiqui,1015184,593,Rejected,True
+HDFC100010,Neha Bhat,128951,538,Approved,True
+HDFC100011,Saanvi Reddy,974613,659,Rejected,True
+HDFC100012,Vivaan Patel,846670,773,Approved,False
+HDFC100013,Saanvi Reddy,6941488,811,Approved,False
+HDFC100014,Mary Fernandes,287671,598,Approved,True
+HDFC100015,Aditya Nair,8195681,716,Approved,False
+HDFC100016,Ameena Mirza,347497,719,Approved,False
+HDFC100017,Ananya Joshi,1545607,604,Rejected,True
+HDFC100018,Harpreet Singh,180121,637,Rejected,True
+HDFC100019,Kavya Iyer,3411529,699,Rejected,False
+HDFC100020,Rohan Verma,7633475,759,Approved,False
