@@ -1,5 +1,5 @@
 import unittest
-from engineer_1_json_csv import is_high_risk
+from src.business_logic import is_high_risk
 
 
 class TestBusinessLogic(unittest.TestCase):

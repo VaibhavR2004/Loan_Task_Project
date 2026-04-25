@@ -1,5 +1,5 @@
 import unittest
-from src.engineer_2_requests import fetch_users
+from src.api_requests import fetch_users
 
 class TestAPI(unittest.TestCase):
 

@@ -1,6 +1,7 @@
 import requests
 import csv
-from utils import create_json
+
+from .utils import create_json
 
 URL = "https://jsonplaceholder.typicode.com/users"
 
@@ -39,7 +40,7 @@ def save_users_csv(users):
             "City": u["address"]["city"]
         })
 
-    with open("data//api_users.csv", "w", newline="") as f:
+    with open("data/api_users.csv", "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=data[0].keys())
         writer.writeheader()
         writer.writerows(data)

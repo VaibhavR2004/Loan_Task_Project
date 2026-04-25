@@ -1,7 +1,7 @@
 import os
 import unittest
 import csv
-from utils import load_json
+from src.utils import load_json
 
 DATA_PATH = "data/hdfc_loan_sample_20_rows.json"
 

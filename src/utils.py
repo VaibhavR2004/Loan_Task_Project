@@ -1,5 +1,5 @@
-
 import json
+
 
 def load_json(path):
     try:
@@ -11,6 +11,7 @@ def load_json(path):
     except json.JSONDecodeError:
         print("Invalid or empty JSON file")
         return []
+
 
 def create_json(file_path, data):
     with open(file_path, "w") as file:

@@ -1,27 +1,33 @@
 import csv
-from utils import load_json, create_json
+
+from .utils import load_json, create_json
 
 
 def is_high_risk(record):
     conditions = 0
 
-    if record.get("CIBIL_Score", 0) < 650:
+    cibil_score = record.get("CIBIL_Score") or 0
+    credit_history = record.get("Credit_History") if record.get("Credit_History") is not None else 1
+    debt_to_income = record.get("Debt_to_Income_Ratio") or 0
+    default_count = record.get("Default_History_Count") or 0
+
+    if cibil_score < 650:
         conditions += 1
 
-    if record.get("Credit_History", 1) == 0:
+    if credit_history == 0:
         conditions += 1
 
-    if record.get("Debt_to_Income_Ratio", 0) > 0.6:
+    if debt_to_income > 0.6:
         conditions += 1
 
-    if record.get("Default_History_Count", 0) > 0:
+    if default_count > 0:
         conditions += 1
 
     return conditions >= 2
 
 
 def process_loans():
-    data = load_json("/Users/ahammedanzar_mdnz/Desktop/Loan_project/Loan_Task_Project/data/hdfc_loan_sample_20_rows.json")
+    data = load_json("data/hdfc_loan_sample_20_rows.json")
 
     if not data:
         print("No data found")
@@ -64,6 +70,7 @@ def process_loans():
 
 def main():
     process_loans()
+
 
 if __name__ == "__main__":
     main()
