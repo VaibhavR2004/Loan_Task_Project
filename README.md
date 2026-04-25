@@ -21,6 +21,7 @@ The project uses an HDFC Loan sample dataset containing 20 loan application reco
 
 ## Project Structure
 
+```text
 loan_review_task/
 │── data/
 │   ├── hdfc_loan_sample_20_rows.json
@@ -32,9 +33,9 @@ loan_review_task/
 │
 │── src/
 │   ├── utils.py
-│   ├── engineer_1_json_csv.py         Done by Vaibhav Kumar Rajput
-│   ├── engineer_2_api_requests.py     Done by Shiva Chandra
-│   └── engineer_3_unit_testing.py     Done by Anzar Ahmed
+│   ├── engineer_1_json_csv.py
+│   ├── engineer_2_api_requests.py
+│   └── engineer_3_unit_testing.py
 │
 │── tests/
 │   ├── test_json_csv.py
@@ -42,10 +43,7 @@ loan_review_task/
 │   └── test_business_logic.py
 │
 │── requirements.txt
-│── README.md
-
----
-
+└── README.md
 ## Engineer 1 – JSON + CSV + File Handling
 
 ### Features
